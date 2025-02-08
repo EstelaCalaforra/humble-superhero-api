@@ -46,7 +46,7 @@ const useForm = () => {
 
     try {
       // Send superhero data to the API POST endpoint
-      const response = await sendSuperheroData(state.name, state.superpower, state.humilityScore)
+      await sendSuperheroData(state.name, state.superpower, state.humilityScore)
       setSuccessMessage('A new superhero joined the team! 💫')
       const newSuperhero = {
         name: state.name,
