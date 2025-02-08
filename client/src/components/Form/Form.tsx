@@ -36,7 +36,7 @@ const Form = ({ addSuperhero }: Props) => {
       </div>
 
       <div>
-        <label htmlFor="humilityScore">Humility:</label>
+        <label htmlFor="humilityScore">Humility score:</label>
         <input
           type="text"
           id="humilityScore"
