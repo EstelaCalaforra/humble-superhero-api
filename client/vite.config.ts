@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-// https://vite.dev/config/
+const PROD_API_URL = process.env.CORS_ORIGIN_PROD
+console.log({PROD_API_URL})
+
 export default defineConfig({
   plugins: [react()],
   define: {
