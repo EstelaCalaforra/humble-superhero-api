@@ -5,12 +5,12 @@ import { Superheroe } from './types'
 @Controller('superheroes')
 export class SuperheroesController {
   // Array to store the superhero team
-  private superHeroesTeam: Superheroe[] = []
+  private superheroesTeam: Superheroe[] = []
 
   // Handle GET requests to return the superhero sorted by descending humilityScore
   @Get()
   sendSuperheroe() {
-    return this.superHeroesTeam.sort(
+    return this.superheroesTeam.sort(
       (a, b) => b.humilityScore - a.humilityScore
     )
   }
@@ -22,11 +22,11 @@ export class SuperheroesController {
     const newHero: Superheroe = {
       name: body.name,
       superpower: body.superpower,
-      humilityScore: body.humilityScore
+      humilityScore: Number(body.humilityScore)
     }
 
     // Push the new superhero to the superheroes array
-    this.superHeroesTeam.push(newHero)
+    this.superheroesTeam.push(newHero)
 
     return {
       message: 'Superhero added successfully.',
