@@ -1,7 +1,9 @@
+const HUMBLE_SUPERHERO_API = import.meta.env.VITE_API_HUMBLE_SUPERHERO_URL
+
 // Function to fetch API POST endpoint
 export const sendSuperheroData = async (name: string, superpower: string, humilityScore: string) => {
   try {
-    const response = await fetch('http://localhost:3000/superheroes', {
+    const response = await fetch(`${HUMBLE_SUPERHERO_API}/superheroes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -28,7 +30,7 @@ export const sendSuperheroData = async (name: string, superpower: string, humili
 // Function to fetch API GET endpoint
 export const getSuperheroData = async () => {
   try {
-    const response = await fetch('http://localhost:3000/superheroes', {
+    const response = await fetch(`${HUMBLE_SUPERHERO_API}/superheroes`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'

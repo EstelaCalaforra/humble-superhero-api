@@ -59,8 +59,6 @@ const useForm = () => {
 
       // Clear form fields
       dispatch({ type: 'RESET_FORM' })
-
-      console.log('Data submitted:', response)
     } catch (error) {
       setError('There was an error submitting the form.')
       console.error('Error:', error)
