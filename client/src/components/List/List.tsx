@@ -7,7 +7,7 @@ type Props = {
 
 const List = ({ superheroes }: Props) => {
   return (
-    <div>
+    <div className='list-container'>
       <h2>Superheroes Team</h2>
       <ul>
         {superheroes.length > 0 ? (

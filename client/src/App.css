@@ -12,18 +12,19 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 600px;
 }
+
 li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     gap: 5px;
     background-color: rgba(91, 62, 91, 0.501);
     padding: 10px;
-    width: 100%;
     border-radius: 10px;
     border: 1px solid pink;
+    width: 100%;
 }
 
 h3 {
@@ -38,5 +39,16 @@ h3 {
 
 h2 {
     text-align: center;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
