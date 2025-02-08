@@ -30,6 +30,7 @@ li {
 h3 {
     color: rgb(186, 88, 88);
     font-size: 32px;
+    margin-top: 0px;
 }
 
 .humility {
@@ -39,6 +40,7 @@ h3 {
 
 h2 {
     text-align: center;
+
 }
 
 .list-container {
